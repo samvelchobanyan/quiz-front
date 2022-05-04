@@ -6,5 +6,33 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'quiz';
+  canClick  = false;
+  canEdit = false;
+  message = 'this is read only';
+  sayHelloId = 1;
+  fontColor = 'blue';
+  
+
+  sayMessage() {
+    alert(this.message);
+  }
+
+  onEditClick(){
+    this.canEdit = !this.canEdit;
+    if(this.canEdit) {
+      this.message = 'you can edit'
+    }else{
+      this.message = 'cant edit'
+    }
+  }
+  
 }
+
+// onEditClick(){
+//   this.canEdit = !this.canEdit;
+//   if(this.canEdit) {
+//     this.message = 'you can edit'
+//   }else{
+//     this.message = 'cant edit'
+//   }
+// }
