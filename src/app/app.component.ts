@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Logger } from './logger.service';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  constructor(private logger: Logger){}
+
   canClick  = false;
   canEdit = false;
   message = 'this is read only';
@@ -14,6 +17,7 @@ export class AppComponent {
   
 
   sayMessage() {
+    this.logger.writeCount(5);
     alert(this.message);
   }
 

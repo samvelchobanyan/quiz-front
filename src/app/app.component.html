@@ -1,3 +1,4 @@
+<app-top-bar></app-top-bar>
 <p
   [id]="sayHelloId"
   [style.color]="fontColor">
@@ -22,3 +23,7 @@
 </ng-template>
  
 <p [contentEditable]="canEdit">{{ message }}</p>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
