@@ -1,0 +1,8 @@
+.old-div{
+    border: solid 1px;
+    border-radius: 5px;
+    background-color: beige;
+    padding: 5px;
+    margin: 5px;
+    width: 450px;
+}

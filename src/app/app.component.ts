@@ -13,7 +13,7 @@ export class AppComponent {
   canEdit = false;
   message = 'this is read only';
   sayHelloId = 1;
-  fontColor = 'blue';
+  fontColor = 'green';
   
 
   sayMessage() {
