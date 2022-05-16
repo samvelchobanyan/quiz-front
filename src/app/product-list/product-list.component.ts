@@ -14,6 +14,10 @@ export class ProductListComponent implements OnInit {
     alert('share');
   }
 
+  onNotify(){
+    alert('notified');
+  }
+
   ngOnInit(): void {
   }
 
