@@ -10,8 +10,20 @@ export class ProductComponent implements OnInit {
 
   constructor() { }
 
-  @Input() 
-  product: Product | undefined;
+  @Input()
+  product!: Product;
+
+  share(){
+    alert('shared');
+  }
+
+  onNotify(){
+    alert('notified');
+  }
+
+  log(val: any){
+    console.log(val);
+  }
 
   ngOnInit(): void {
   }
